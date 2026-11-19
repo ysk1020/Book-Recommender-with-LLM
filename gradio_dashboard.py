@@ -75,7 +75,7 @@ def recommend_books(query: str,  category: str, tone: str):
             authors_str = f"{author_split[0]} and {author_split[1]}"
         elif len(author_split) > 2:
             authors_str = ", ".join(author_split[:-1]) + f", and {author_split[-1]}"
-        else:
+        else: 
             authors_str = row["authors"]
 
         caption = f"{row['title']} by {authors_str}"
